@@ -93,12 +93,14 @@ section{
                     .title{
                         padding-bottom: 20px;
                         text-transform: uppercase;
+                        color: white;
                     }
     
                     li{
-                        font-size: 10px;
+                        font-size: 15px;
                         padding-bottom: 8px;
                         color: gray;
+                        list-style-type: none;
                     }
     
                     .shopUl{
@@ -142,3 +144,4 @@ section{
         }
      
     }
+
