@@ -1,0 +1,79 @@
+<script>
+    export default{
+        name:"Header",
+       data(){
+        return{
+            menuLinks:[
+                {
+                    nome:"CHARACTERS",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"COMICS",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"MOVIES",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"TV",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"GAMES",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"COLLECTIBLES",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"VIDEOS",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"FANS",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"NEWS",
+                    url:"/",
+                    current:"false",
+                },
+                {
+                    nome:"SHOP",
+                    url:"/",
+                    current:"false",
+                },
+            ]
+        }
+       }       
+    }
+</script>
+
+<template>
+    <header>
+        <div>
+            <img src="../assets/img/dc-logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+               <li v-for="(elem,index) in menuLinks" :key="index" >
+                    <a href="">{{ elem.nome }}</a>
+               </li>    
+            </ul>
+        </nav>
+    </header>
+</template>
+
+<style lang="scss" scoped>
+</style>
