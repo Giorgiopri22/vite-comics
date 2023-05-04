@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+li{
+    list-style-type: none;
+}
 
 header{
     text-align: center;
@@ -12,29 +14,46 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    width: 60%;
+    width: 80%;
+
     margin: auto;    
         nav{
             display: flex;
             justify-content: center;
             align-items: center;
+            
+            height:157px;
+            
 
         }
+
             ul{
                 display: flex;
+                height: 100%;
+               
             }
                 li{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
                     list-style-type: none;
                     &:hover{
-                        background-color: lightcoral;
+                        border-bottom: 3px solid #1480ed;
                     }
+                    
+                    
                     a{
                         text-decoration: none;
                         color: black;
                         padding: 15px;
+                        &:hover{
+                           color: #1480ed;
+                        }
                     }
                 }
-
+    div{
+        padding: 25px;
+    }
 }
 
 .active{
@@ -43,15 +62,67 @@ header{
 
 section{
     background-color: black;
-    height: 300px;
+    
     
         h1{
             color:white;
     }
 }
 
+
+
+main{
+    color: white;
+
+    .section-jumbotron{
+        height: 400px;
+        img{
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    .container{
+        width: 80%;
+        margin:0 auto;
+    }
+    .section-content {
+        background-color: #1c1c1c;
+        padding: 54px 0;
+
+        .card-list{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+            row-gap: 50px;
+        }
+
+        .style-target-button{
+            background-color: #1480ed;
+            width: max-content;
+            text-transform: uppercase;
+        }
+
+        .target{
+            position: relative;
+            bottom: 85px;
+            padding: 15px 30px;
+        }
+
+        .button{
+            margin: 0 auto;
+            padding: 10px 60px;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    }
+
+}
+
 .about{
-    background-color: rgb(100, 100, 243);
+    background-color: #0282f9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,12 +131,15 @@ section{
             display: flex;
             justify-content: space-around;
             align-items: center;
+            padding:10px;
                 div{
                     width: 20%;
+                    
                     img{
                         width: 20%;
                     }
-                }           
+                }
+               
         }
     }
 
@@ -74,13 +148,15 @@ section{
         .section-link {
             background-image: url("./src/assets/img/footer-bg.jpg");
             background-size: cover;
-            padding: -10px;
+            
             overflow: hidden;
     
             .container {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 80%;
+                margin: 0 auto;
     
                 img{
                     margin: -50px;
@@ -109,11 +185,14 @@ section{
                 }
             }
         }
-    
+        
         .section-sign-up {
             background-color:rgb(65, 64, 64);
             padding: 29px;
-    
+            .container{
+                width: 80%;
+                margin: 0 auto;
+            }
             .row{
                 display: flex;
                 justify-content: space-between;
@@ -121,7 +200,7 @@ section{
                 text-transform: uppercase;
     
                 .col-button{
-                    border: 2px solid blue;
+                    border: 2px solid #1480ed;
                     padding: 15px;
                 }
     
@@ -131,7 +210,7 @@ section{
                     gap: 26px;
     
                     .text{
-                        color: blue;
+                        color: #1480ed;
                         font-weight: bold;
                     }
     
